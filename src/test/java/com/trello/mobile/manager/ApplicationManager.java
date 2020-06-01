@@ -18,6 +18,7 @@ public class ApplicationManager {
     //TeamHelper team;
     SessionHelper session;
     WelcomePage welcome;
+    BoardsList boards;
     // ProfileHelper profile;
     String browser;
     Properties properties;
@@ -36,7 +37,7 @@ public class ApplicationManager {
        capabilities.setCapability("appPackage", "com.trello");
        capabilities.setCapability("appActivity", ".home.HomeActivity");
 
-       capabilities.setCapability("app", "C:/Users/Elena/Documents/GitHub/mobileTrelloNew/apk/Trello_new(1).apk");
+       capabilities.setCapability("app", "C:/Users/Elena/Documents/GitHub/mobileTrelloNew/Trello_new(1).apk");
 
        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
@@ -74,7 +75,10 @@ public class ApplicationManager {
         return welcome;
     }
 
-    //  public BoardHelper getBoard() {
+    public BoardsList getBoards() {
+        return boards;
+    }
+//  public BoardHelper getBoard() {
 //    return board;
 //  }
 //

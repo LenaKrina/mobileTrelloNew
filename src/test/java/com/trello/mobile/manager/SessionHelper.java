@@ -15,21 +15,19 @@ public class SessionHelper  extends  HelperBase{
     }
 
     public void confirmLogin() {
-        click(By.id("com.trello:id/authenticate"));
+        click(By.xpath("//*[@resource-id='com.trello:id/authenticate']"));
     }
 
     public void fillLoginForm(String userEmail, String password) {
         typeEmail(userEmail);
-        type(By.id("com.trello:id/password']"), password);
+        type(By.xpath("//*[@resource-id='com.trello:id/password']"), password);
     }
 
     private void typeEmail(String userEmail) {
         type(By.xpath("//*[@resource-id='com.trello:id/user']"), userEmail);
-
     }
 
     public void initLogin() {
        click(By.id("log_in_button"));
-
     }
 }

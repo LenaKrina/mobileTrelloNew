@@ -32,7 +32,7 @@ public class HelperBase {
         if(text != null) {
             waitForElementLocatedAndclick(locator, 30);
             driver.findElement(locator).clear();
-            driver.findElement(locator).sendKeys(text + Keys.ENTER);
+            driver.findElement(locator).sendKeys(text);
         }
     }
 
@@ -103,4 +103,5 @@ public class HelperBase {
         action.press(PointOption.point(middleX, startY)).moveTo(PointOption.point(middleX, stopY)).release().perform();
 
     }
+
 }

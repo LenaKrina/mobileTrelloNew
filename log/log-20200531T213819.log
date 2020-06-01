@@ -1,0 +1,3 @@
+21:39:03.939 [main] INFO  c.t.m.manager.ApplicationManager - Ready!
+21:39:09.119 [main] INFO  com.trello.mobile.tests.TestBase - Start test swipePageTests with parameters: []
+21:39:09.641 [main] INFO  com.trello.mobile.tests.TestBase - Stop test swipePageTests

@@ -1,0 +1,3 @@
+22:26:36.693 [main] INFO  c.t.m.manager.ApplicationManager - Ready!
+22:26:41.937 [main] INFO  com.trello.mobile.tests.TestBase - Start test listOfBoards with parameters: []
+22:27:01.140 [main] INFO  com.trello.mobile.tests.TestBase - Stop test listOfBoards
